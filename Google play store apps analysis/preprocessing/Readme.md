@@ -5,7 +5,7 @@
 1. Load the data, but delete the records which app name can't be decoded in unicode-8.  
 2. Drop the columns which are not related to installs and also not the factors developer can control before release the app (ex: number of review, app names, etc), and thus remains 7 columns left in total.
 3. Drop the records with no value. 
-* After preprocessing, data will store in googleplaystore_preprocess.csv in data after preprocessing file
+* After preprocessing, data will be stored as googleplaystore_preprocess.csv in data after preprocessing file
 
 ### Labeling
 1. Installs is the target label we are going to predict, and thus we split data into three class(installs<=10000、 10000<installs<=1000000, installs>1000000) 
