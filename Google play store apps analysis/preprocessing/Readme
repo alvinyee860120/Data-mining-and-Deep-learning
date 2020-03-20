@@ -1,4 +1,4 @@
-#Data Mining: Data preprocessing
+# Data Mining: Data preprocessing
 * In order to get clean data, first step we need to do is data preprocessing
 1. Original data(googleplaystore.csv) includes 13 columns and 10841 data records.
 2. First we drop the columns which are not related to installs (ex: number of review )
