@@ -13,6 +13,10 @@
 3. Label the feature columns into each different class dpends on unique value within the column. 
 4. Min_max scaling on all the columns, and thus the label will all be converged in the range of [0,1]
 
+### Splitting Data
+1. train-test split(0.66 vs. 0.33)
+2. K-fold & stratified K-fold (fold = 10) 
+
 ### Implement methods of decreasing dimension
 1. SVD
 2. PCA
@@ -23,12 +27,24 @@
 1. SVM
 2. Naiive Bayes
 3. Decision tree
+4. Random Forest 
+5. Adaboost
+6. Xgboost
+7. Neural Network(fully-connected)
+8. Ensemble methods: Voting classifier & Handmade bagging method
 
-### Result:
+### Result after preprocessing:
 * The prediction accuracy is around 50% , which means that it's pretty hard for machine to distinguish these apps according to these 6 features.
 * The best classifier is Decision tree, which prediction accuracy is 57%
 * The least dimension we can decrease is 3, the result of four methods shows no nuch difference.
 * when the dimension decrease under 2, the result of four methods shows significant difference and the best method is Autoencoder, which still remains 50%.
+
+### Result with implementing different classifiers
+* The prediction accuracy is increase to 57-59% with decision tree series, such as Random forest, Adaboost, Xgboost.
+* However, Neural Network model doesn't perform well as I expected, which only score 52% on accuracy.
+* Furthermore, I select the three best performence model for voting classifier with different weights and handmade bagging method for two exnsemble approaches.
+* The final result still remains the same(59%), I'm still looking forward to optimize the model for higher accuracy. 
+
 
 
 
